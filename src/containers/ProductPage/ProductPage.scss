@@ -1,0 +1,113 @@
+.product-page__container {
+  margin: 20px 100px;
+  display: flex;
+  justify-content: baseline;
+  .navbar {
+    flex-basis: 20%;
+    height: 100%;
+  }
+  .main-product {
+    flex-basis: 100%;
+  }
+}
+
+// main product
+.product__item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  .outline__body {
+    background-color: transparent;
+    margin: 0 -5px;
+    width: 20%;
+    padding: 0 5px;
+    .body__cus {
+      background-color: #fff;
+      margin: 5px;
+      padding-top: 30px;
+      border-radius: 12px;
+      min-height: 380px;
+
+      //   border: 1px solid green;
+      box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.10196078431372549),
+        0 2px 6px 2px rgba(60, 64, 67, 0.14901960784313725);
+      .bg-img {
+        display: block;
+        height: 200px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 5px;
+        &.new-product__img {
+          height: 160px !important;
+          margin: 20px 0 !important;
+        }
+      }
+      .product__info {
+        margin: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        // height: 200px;
+        justify-content: space-evenly;
+        .price--real {
+          color: #d0021c;
+          font-size: 18px;
+          padding: 10px 0;
+        }
+        .price--sale {
+          padding-bottom: 20px;
+          .price--begin {
+            opacity: 0.8;
+            text-decoration: line-through;
+            padding-right: 10px;
+          }
+          .price--percent {
+            background: red;
+            color: white;
+            padding: 5px;
+            border-radius: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+// filter
+.pl {
+  padding-left: 5px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.form-check {
+  margin-left: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.filter__container {
+  // height: 500px;
+  // border: 1px solid green;
+  font-size: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  margin: 0 20px;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.10196078431372549),
+    0 2px 6px 2px rgba(60, 64, 67, 0.14901960784313725);
+  padding: 0 10px;
+  padding-bottom: 20px;
+  .product__container {
+  }
+  .tv-resolution {
+  }
+  .price__filter {
+  }
+  .title_filter {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: 30px;
+  }
+}
