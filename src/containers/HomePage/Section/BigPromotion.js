@@ -47,11 +47,9 @@ class BigPromotion extends Component {
   render() {
     let arrProducts = [];
     this.state.products.map((item, index) => {
-      console.log("index", index);
       if (item.isHot === 1) {
         arrProducts.push(item);
       }
-      console.log("lengtth", arrProducts.length);
     });
 
     return (
@@ -70,8 +68,6 @@ class BigPromotion extends Component {
               {arrProducts &&
                 arrProducts.length > 0 &&
                 arrProducts.map((item, index) => {
-                  console.log("map lenght", index);
-
                   let imageBase64 = "";
                   if (item.avatar) {
                     imageBase64 = new Buffer(item.avatar, "base64").toString(

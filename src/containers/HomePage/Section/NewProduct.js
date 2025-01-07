@@ -90,7 +90,7 @@ class NewProduct extends Component {
                         />
                         <div className="product__info">
                           <p className="new-product">
-                            <span>Sản phẩm mới 2023</span>
+                            <span>Sản phẩm mới</span>
                           </p>
                           <span className="hover__event--blue">
                             {item.name}
