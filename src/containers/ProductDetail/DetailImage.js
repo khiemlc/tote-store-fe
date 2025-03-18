@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { Buffer } from "buffer";
 
 import "./ProductDetail.scss";
 import Slider from "react-slick";
@@ -8,7 +9,7 @@ class DetailImage extends Component {
   render() {
     let imageBase64 = "";
     if (this.props.detailProduct && this.props.detailProduct.avatar) {
-      imageBase64 = new Buffer(
+      imageBase64 = Buffer.from(
         this.props.detailProduct.avatar,
         "base64"
       ).toString("binary");

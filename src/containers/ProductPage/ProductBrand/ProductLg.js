@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import * as actions from "../../../store/actions";
 import { withRouter } from "react-router";
+import { Buffer } from "buffer";
 
 class ProductLg extends Component {
   constructor(props) {
@@ -48,7 +49,7 @@ class ProductLg extends Component {
                 arrProducts.map((item, index) => {
                   let imageBase64 = "";
                   if (item.avatar) {
-                    imageBase64 = new Buffer(item.avatar, "base64").toString(
+                    imageBase64 = Buffer.from(item.avatar, "base64").toString(
                       "binary"
                     );
                   }

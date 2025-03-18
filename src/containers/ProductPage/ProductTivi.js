@@ -4,6 +4,8 @@ import * as actions from "../../store/actions";
 import { withRouter } from "react-router";
 import NavbarComponent from "./FilerComponent";
 import Breadcrumb from "../AllSection/Breadcrumb";
+import { Buffer } from "buffer";
+
 class ProductTivi extends Component {
   constructor(props) {
     super(props);
@@ -52,7 +54,7 @@ class ProductTivi extends Component {
                 arrProducts.map((item, index) => {
                   let imageBase64 = "";
                   if (item.avatar) {
-                    imageBase64 = new Buffer(item.avatar, "base64").toString(
+                    imageBase64 = Buffer.from(item.avatar, "base64").toString(
                       "binary"
                     );
                   }

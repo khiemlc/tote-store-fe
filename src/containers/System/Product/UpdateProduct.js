@@ -10,6 +10,8 @@ import "react-markdown-editor-lite/lib/index.css";
 import * as actions from "../../../store/actions";
 import { CommonUtils } from "../../../utils";
 import Select from "react-select";
+import { Buffer } from "buffer";
+
 import { getProductById } from "../../../services/productService";
 const mdParser = new MarkdownIt(/* Markdown-it options */);
 
@@ -57,7 +59,7 @@ class UpdateProduct extends Component {
       console.log("check res", res.product.avatar);
       let imageBase64 = "";
       if (res.product.avatar) {
-        imageBase64 = new Buffer(res.product.avatar, "base64").toString(
+        imageBase64 = Buffer.from(res.product.avatar, "base64").toString(
           "binary"
         );
       }
@@ -149,7 +151,7 @@ class UpdateProduct extends Component {
   handleUpdateProduct = () => {
     let imageBase64 = "";
     if (this.state.avatar) {
-      imageBase64 = new Buffer(this.state.avatar, "base64").toString("binary");
+      imageBase64 = Buffer.from(this.state.avatar, "base64").toString("binary");
     }
     this.props.updateProduct({
       id: this.state.selectedOption.value,

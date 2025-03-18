@@ -4,6 +4,8 @@ import "./Cart.scss";
 import { push } from "connected-react-router";
 import { withRouter } from "react-router";
 import * as actions from "../../store/actions";
+import { Buffer } from "buffer";
+
 // import { deleteCart } from "../../services/orderService";
 class Cart extends Component {
   constructor(props) {
@@ -139,7 +141,7 @@ class Cart extends Component {
                           tempo = +tempo + +item.totalPrice;
                           let imageBase64 = "";
                           if (item.productAvatar) {
-                            imageBase64 = new Buffer(
+                            imageBase64 = Buffer.from(
                               item.productAvatar,
                               "base64"
                             ).toString("binary");

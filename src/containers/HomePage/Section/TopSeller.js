@@ -4,6 +4,7 @@ import { FormattedMessage } from "react-intl";
 import { changeLanguage } from "../../../store/actions";
 import * as actions from "../../../store/actions";
 import { withRouter } from "react-router";
+import { Buffer } from "buffer";
 
 //import Slider
 import Slider from "react-slick";
@@ -76,7 +77,7 @@ class TopSeller extends Component {
                 arrProducts.map((item, index) => {
                   let imageBase64 = "";
                   if (item.avatar) {
-                    imageBase64 = new Buffer(item.avatar, "base64").toString(
+                    imageBase64 = Buffer.from(item.avatar, "base64").toString(
                       "binary"
                     );
                   }

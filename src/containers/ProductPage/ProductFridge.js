@@ -5,6 +5,7 @@ import { withRouter } from "react-router";
 // import "./ProductFridge.scss";
 import NavbarComponent from "./FilerComponent";
 import Breadcrumb from "../AllSection/Breadcrumb";
+import { Buffer } from "buffer";
 
 class ProductFridge extends Component {
   constructor(props) {
@@ -54,7 +55,7 @@ class ProductFridge extends Component {
                 arrProducts.map((item, index) => {
                   let imageBase64 = "";
                   if (item.avatar) {
-                    imageBase64 = new Buffer(item.avatar, "base64").toString(
+                    imageBase64 = Buffer.from(item.avatar, "base64").toString(
                       "binary"
                     );
                   }
