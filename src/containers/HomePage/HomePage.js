@@ -1,18 +1,18 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import HomeHeader from "./Header/HomeHeader.js";
+// import HomeHeader from "./Header/HomeHeader.js";
 import BannerSlide from "./Section/BannerSlide.js";
-import Spotlight from "./Section/Spotlight.js";
-import CateFeature from "./Section/CateFeature.js";
-import Brand from "./Section/Brand.js";
+// import Spotlight from "./Section/Spotlight.js";
+// import CateFeature from "./Section/CateFeature.js";
+// import Brand from "./Section/Brand.js";
 import "./HomePage.scss";
 
 import BigPromotion from "./Section/BigPromotion.js";
 import NewProduct from "./Section/NewProduct.js";
 import TopSeller from "./Section/TopSeller.js";
-import TopSearch from "./Section/TopSearch.js";
-import HomeGeneral from "./HomeGeneral.js";
-import HomeFooter from "./HomeFooter.js";
+// import TopSearch from "./Section/TopSearch.js";
+// import HomeGeneral from "./HomeGeneral.js";
+// import HomeFooter from "./HomeFooter.js";
 import MainBanner from "./Header/MainBanner.js";
 //slider
 import "slick-carousel/slick/slick.css";

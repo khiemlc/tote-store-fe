@@ -38,14 +38,14 @@
 
 // above setup button slick
 .section-banner {
-  height: 220px;
+  height: 420px;
   margin-bottom: 10px;
   .section-banner__container {
     margin: 20px 150px;
     .banner__cus {
       .bg-img {
         width: 600px;
-        height: 190px;
+        height: 390px;
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -53,10 +53,10 @@
         border-radius: 12px;
         padding: 0 5px;
         &.banner0__img {
-          background-image: url("../../../assets/images/banner/tivi_banner.webp");
+          background-image: url("../../../assets/images/banner/test.jpg");
         }
         &.banner1__img {
-          background-image: url("../../../assets/images/banner/tulanh_banner.webp");
+          background-image: url("../../../assets/images/banner/slide3.jpg");
         }
       }
     }

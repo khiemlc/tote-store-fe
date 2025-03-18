@@ -17,7 +17,7 @@ class BannerSlide extends Component {
   };
   getFridge = () => {
     setTimeout(() => {
-      this.props.history.push(`/fridge`);
+      this.props.history.push(`/tote`);
     }, 100);
   };
   render() {
