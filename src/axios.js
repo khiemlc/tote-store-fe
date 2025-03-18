@@ -2,7 +2,7 @@ import axios from "axios";
 import _ from "lodash";
 
 const instance = axios.create({
-  baseURL: 'http://localhost:8080',
+  baseURL: 'https://tote-store-be.onrender.com',
 
   withCredentials: true,
   // handle send token cookie into backend
